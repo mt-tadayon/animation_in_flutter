@@ -6,6 +6,8 @@ class ImageScreen extends StatefulWidget {
 }
 
 class _ImageScreenState extends State<ImageScreen> {
+  static final tween = Tween<double>(begin: 0, end: 0.8);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,18 +19,15 @@ class _ImageScreenState extends State<ImageScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           TweenAnimationBuilder(
+            child: Image.asset(
+              'assets/images/circle.png',
+            ),
             duration: Duration(seconds: 5),
-            tween: Tween<double>(begin: 0, end: 1),
+            tween: tween,
             curve: Curves.easeOutQuad,
-            builder: (context, double scale, child) => Transform.scale(
+            builder: (_, double scale, myChild) => Transform.scale(
               scale: scale,
-              child: Center(
-                child: Image.asset(
-                  'assets/images/circle.png',
-                  alignment: Alignment.bottomCenter,
-                  scale: 3,
-                ),
-              ),
+              child: myChild,
             ),
           ),
         ],
