@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 class ImageScreen extends StatefulWidget {
   @override
@@ -18,11 +17,11 @@ class _ImageScreenState extends State<ImageScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           TweenAnimationBuilder(
-            duration: Duration(seconds: 10),
-            tween: Tween<double>(begin: 0, end: 2 * math.pi),
-            curve: Curves.elasticInOut,
-            builder: (context, double angle, child) => Transform.rotate(
-              angle: angle,
+            duration: Duration(seconds: 5),
+            tween: Tween<double>(begin: 0, end: 1),
+            curve: Curves.easeOutQuad,
+            builder: (context, double scale, child) => Transform.scale(
+              scale: scale,
               child: Center(
                 child: Image.asset(
                   'assets/images/circle.png',
