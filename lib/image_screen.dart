@@ -15,22 +15,17 @@ class _ImageScreenState extends State<ImageScreen> {
         backgroundColor: const Color(0xffE1719E),
         title: Text('TweenAnimationBuilder'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          TweenAnimationBuilder(
-            child: Image.asset(
-              'assets/images/circle.png',
-            ),
-            duration: Duration(seconds: 5),
-            tween: tween,
-            curve: Curves.easeOutQuad,
-            builder: (_, double scale, myChild) => Transform.scale(
-              scale: scale,
-              child: myChild,
-            ),
-          ),
-        ],
+      body: TweenAnimationBuilder(
+        child: Image.asset(
+          'assets/images/circle.png',
+        ),
+        duration: Duration(seconds: 5),
+        tween: tween,
+        curve: Curves.easeOutQuad,
+        builder: (_, double scale, myChild) => Transform.scale(
+          scale: scale,
+          child: myChild,
+        ),
       ),
     );
   }
