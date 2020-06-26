@@ -28,7 +28,9 @@ class _ImplicitAnimationState extends State<ImplicitAnimation> {
               child: AnimatedDefaultTextStyle(
                 duration: Duration(seconds: 1),
                 style: TextStyle(
-                  color: status ? Colors.white : Colors.black,
+                  color: status ? Colors.black : Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold
                 ),
                 child: Text('Hello World!'),
                 curve: Curves.easeInSine,
