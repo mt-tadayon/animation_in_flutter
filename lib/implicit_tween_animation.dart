@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ImageScreen extends StatefulWidget {
+class ImplicitTweenAnimation extends StatefulWidget {
   @override
-  _ImageScreenState createState() => _ImageScreenState();
+  _ImplicitTweenAnimationState createState() => _ImplicitTweenAnimationState();
 }
 
-class _ImageScreenState extends State<ImageScreen> {
+class _ImplicitTweenAnimationState extends State<ImplicitTweenAnimation> {
   static final tween = Tween<double>(begin: 0, end: 0.8);
 
   @override
