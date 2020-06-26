@@ -23,7 +23,7 @@ class DashboardCard extends StatelessWidget {
       },
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
           child: Text(
             animationName,
             textAlign: TextAlign.center,

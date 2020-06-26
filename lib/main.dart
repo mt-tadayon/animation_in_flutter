@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:implicitanimation/foo_transition.dart';
 
+import 'animated_builder_animation.dart';
 import 'animated_foo.dart';
+import 'foo_transition.dart';
 import 'implicit_tween_animation.dart';
 import 'widgets/dashboard_card.dart';
 
@@ -51,6 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
           DashboardCard(
             animationName: 'Transition',
             screenName: FooTransition(),
+          ),
+          DashboardCard(
+            animationName: 'AnimatedBuilder',
+            screenName: AnimatedBuilderAnimation(),
           )
         ],
       ),
