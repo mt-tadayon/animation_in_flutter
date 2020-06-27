@@ -10,7 +10,10 @@ class _LottieAnimationState extends State<LottieAnimation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Lottie Animation'), backgroundColor: const Color(0xff2B4937),),
+      appBar: AppBar(
+        title: Text('Lottie Animation'),
+        backgroundColor: const Color(0xff2B4937),
+      ),
       body: Center(
         child: Lottie.asset(
           'assets/animation/eco-earth.json',
