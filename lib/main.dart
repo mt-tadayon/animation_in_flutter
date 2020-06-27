@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:implicitanimation/lottie_animation.dart';
 
 import 'animated_builder_animation.dart';
 import 'animated_foo.dart';
@@ -56,6 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
           DashboardCard(
             animationName: 'AnimatedBuilder',
             screenName: AnimatedBuilderAnimation(),
+          ),
+          DashboardCard(
+            animationName: 'LottieAnimation',
+            screenName: LottieAnimation(),
           )
         ],
       ),
