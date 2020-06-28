@@ -12,15 +12,24 @@ class _FooTransitionState extends State<FooTransition>
 
   @override
   void initState() {
-    _controller =
-        AnimationController(duration: Duration(seconds: 2), vsync: this);
-    _animation = Tween<double>(begin: 0.0, end: 1.0)
-        .animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut))
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed)
-              _controller.reverse();
-            else if (status == AnimationStatus.dismissed) _controller.forward();
-          });
+    _controller = AnimationController(
+      duration: Duration(seconds: 2),
+      vsync: this,
+    );
+
+    _animation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeOut,
+      ),
+    )..addStatusListener((status) {
+        if (status == AnimationStatus.completed)
+          _controller.reverse();
+        else if (status == AnimationStatus.dismissed) {
+          _controller.forward();
+        }
+      });
+
     _controller.forward();
     super.initState();
   }
@@ -47,6 +56,4 @@ class _FooTransitionState extends State<FooTransition>
       ),
     );
   }
-
-
 }

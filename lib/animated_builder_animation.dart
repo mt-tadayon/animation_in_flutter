@@ -15,9 +15,12 @@ class _AnimatedBuilderAnimationState extends State<AnimatedBuilderAnimation>
 
   @override
   void initState() {
-    _controller =
-        AnimationController(duration: Duration(seconds: 10), vsync: this)..repeat();
+    _controller = AnimationController(
+      duration: Duration(seconds: 10),
+      vsync: this,
+    )..repeat();
     _animation = Tween<double>(begin: -500, end: 0).animate(_controller);
+
     super.initState();
   }
 
@@ -57,5 +60,3 @@ class _AnimatedBuilderAnimationState extends State<AnimatedBuilderAnimation>
     );
   }
 }
-
-
