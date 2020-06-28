@@ -34,7 +34,7 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('AnimatedBuilder'),
+        title: Text('AnimatedWidget'),
       ),
       body: WaveAnimation(animation: _animation),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:implicitanimation/animated_widget.dart';
+import 'package:implicitanimation/animated_widget_example.dart';
 import 'package:implicitanimation/lottie_animation.dart';
 
 import 'animated_builder_animation.dart';
