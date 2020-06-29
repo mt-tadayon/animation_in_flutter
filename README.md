@@ -1,6 +1,9 @@
-# implicitanimation
+# The Stunning World of Animation in Flutter
 
-A new Flutter application.
+This is an application with the implementation of different kind of animation in Flutter.
+
+- [Lab: YouTube video with the presentation](https://www.youtube.com/watch?v=q6oOv87szQYb)
+- [Lab: Link to the presentation](https://drive.google.com/file/d/1k7JCN0ZwrBy-RXSPTEba2nd-p1v3Dinh/view?usp=sharing)
 
 ## Getting Started
 
